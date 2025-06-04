@@ -3,7 +3,6 @@ from openai import OpenAI
 import sympy as sp
 
 
-
 client = OpenAI(
     base_url="https://openrouter.ai/api/v1",
     api_key=st.secrets["openrouter"]["api_key"]
@@ -17,7 +16,7 @@ if st.button("Solve") and user_input:
     try:
         
         completion = client.chat.completions.create(
-            model="mistralai/mistral-nemo:free",
+            model="mistralai/devstral-small:free",
             messages=[
                 {
                     "role": "system",
