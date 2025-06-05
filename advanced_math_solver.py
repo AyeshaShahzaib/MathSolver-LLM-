@@ -16,7 +16,7 @@ if st.button("Solve") and user_input:
     try:
         
         completion = client.chat.completions.create(
-            model="mistralai/devstral-small:free",
+            model="mistralai/mistral-nemo:free",
             messages=[
                 {
                     "role": "system",
