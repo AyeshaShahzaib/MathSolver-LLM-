@@ -8,7 +8,7 @@ client = OpenAI(
     api_key=st.secrets["OPENROUTER_API_KEY"]
 )
 
-st.title("🧠 Advanced Math Solver Agent (LLM-powered only)")
+st.title("🧠 Advanced Math Solver Agent (LLM-powered)")
 
 # User input
 user_input = st.text_area("Enter a math expression (e.g., integrate(sin(x)), diff(cos(2*x), x), solve(x**2 - 4, x)):")
