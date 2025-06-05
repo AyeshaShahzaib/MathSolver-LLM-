@@ -5,7 +5,7 @@ import sympy as sp
 
 client = OpenAI(
     base_url="https://openrouter.ai/api/v1",
-    api_key=st.secrets["openrouter"]["api_key"]
+    api_key="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"
 )
 
 st.title("🧠 Advanced Math Solver Agent (LLM-powered)")
